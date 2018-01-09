@@ -1,7 +1,7 @@
 <?php
 require_once "../vendor/autoload.php";
 $login = new App\classes\Login();
-
+$message="";
 if (isset($_POST['btn']))
 {
     $message = $login->adminLoginCheck($_POST);
